@@ -11,11 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div
-      class="wrapper flex md:flex-row flex-col justify-between items-center gap-2"
+      class="wrapper flex md:flex-row flex-col justify-between items-start gap-2"
     >
       <div class="sidebar w-[250px] p-[16px] bg-[#243747] min-h-screen h-auto">
         <div
@@ -317,9 +322,15 @@
             </ul>
           </div>
 
-          <div class="bottom mt-[100px] pt-[60px] relative bg-[#1C84C6] p-[16px] rounded-[10px] w-full">
+          <div
+            class="bottom mt-[100px] pt-[60px] relative bg-[#1C84C6] p-[16px] rounded-[10px] w-full"
+          >
             <div class="text-center">
-              <img src="img/bell.gif" class="bell w-[80px] absolute top-[-50px] left-[50%] translate-x-[-50%]" alt="" />
+              <img
+                src="img/bell.gif"
+                class="bell w-[80px] absolute top-[-50px] left-[50%] translate-x-[-50%]"
+                alt=""
+              />
             </div>
             <div class="text-center px-[8px]">
               <p class="text-xl text-white font-semibold">
@@ -350,7 +361,165 @@
           </div>
         </div>
       </div>
-      <div class="main w-full"></div>
+      <div class="main w-full p-[20px]">
+        <div class="main-top flex justify-between items-center gap-2">
+          <div class="left">
+            <p class="text-xl font-semibold text-[#8E92BC]">
+              Income Statement ( Profit and Loss)
+            </p>
+          </div>
+
+          <div class="right flex justify-end items-center gap-2">
+            <button
+              id="dropdownHelperRadioButton"
+              data-dropdown-toggle="dropdownHelperRadio"
+              class="flex items-center gap-[10px] border border-[#8E92BC] p-[8px] rounded-[7px]"
+              type="button"
+            >
+              <div class="bg-[#F3F3F3]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+                  />
+                </svg>
+              </div>
+              Dropdown radio
+              <svg
+                class="w-2.5 h-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div
+              id="dropdownHelperRadio"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600"
+              data-popper-reference-hidden=""
+              data-popper-escaped=""
+              data-popper-placement="top"
+              style="
+                position: absolute;
+                inset: auto auto 0px 0px;
+                margin: 0px;
+                transform: translate3d(522.5px, 6119.5px, 0px);
+              "
+            >
+              <ul
+                class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownHelperRadioButton"
+              >
+                <li>
+                  <div
+                    class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600"
+                  >
+                    <div class="flex items-center h-5">
+                      <input
+                        id="helper-radio-4"
+                        name="helper-radio"
+                        type="radio"
+                        value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                      />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label
+                        for="helper-radio-4"
+                        class="font-medium text-gray-900 dark:text-gray-300"
+                      >
+                        <div>Individual</div>
+                        <p
+                          id="helper-radio-text-4"
+                          class="text-xs font-normal text-gray-500 dark:text-gray-300"
+                        >
+                          Some helpful instruction goes over here.
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600"
+                  >
+                    <div class="flex items-center h-5">
+                      <input
+                        id="helper-radio-5"
+                        name="helper-radio"
+                        type="radio"
+                        value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                      />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label
+                        for="helper-radio-5"
+                        class="font-medium text-gray-900 dark:text-gray-300"
+                      >
+                        <div>Company</div>
+                        <p
+                          id="helper-radio-text-5"
+                          class="text-xs font-normal text-gray-500 dark:text-gray-300"
+                        >
+                          Some helpful instruction goes over here.
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600"
+                  >
+                    <div class="flex items-center h-5">
+                      <input
+                        id="helper-radio-6"
+                        name="helper-radio"
+                        type="radio"
+                        value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                      />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label
+                        for="helper-radio-6"
+                        class="font-medium text-gray-900 dark:text-gray-300"
+                      >
+                        <div>Non profit</div>
+                        <p
+                          id="helper-radio-text-6"
+                          class="text-xs font-normal text-gray-500 dark:text-gray-300"
+                        >
+                          Some helpful instruction goes over here.
+                        </p>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

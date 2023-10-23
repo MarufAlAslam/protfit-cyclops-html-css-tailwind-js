@@ -1,6 +1,9 @@
 * {
   font-family: "Inter", sans-serif;
 }
+.menu a{
+    font-size: 14px;
+}
 .menu a.active {
   color: #fff;
   background-color: #192936;
