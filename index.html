@@ -12,6 +12,7 @@
     rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/datepicker.min.js"></script>
   <!-- fontawesome cdn -->
   <script src="https://kit.fontawesome.com/6d64fe8c14.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css" />
@@ -199,6 +200,7 @@
     </div>
 
     <div class="main w-full p-[20px]">
+      <!-- main header -->
       <div class="main-top flex justify-between items-center gap-2">
         <div class="left">
           <p class="text-xl font-semibold text-[#8E92BC]">
@@ -234,11 +236,11 @@
             <div id="dropdownHelperRadio"
               class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600"
               data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="
-                            position: absolute;
-                            inset: auto auto 0px 0px;
-                            margin: 0px;
-                            transform: translate3d(522.5px, 6119.5px, 0px);
-                          ">
+                                  position: absolute;
+                                  inset: auto auto 0px 0px;
+                                  margin: 0px;
+                                  transform: translate3d(522.5px, 6119.5px, 0px);
+                                ">
               <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"
                 aria-labelledby="dropdownHelperRadioButton">
                 <li>
@@ -315,11 +317,11 @@
             <div id="dropdownHelperRadio1"
               class="z-10 hidden bg-white divide-y w-[300px] divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600"
               data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="
-                                      position: absolute;
-                                      inset: auto auto 0px 0px;
-                                      margin: 0px;
-                                      transform: translate3d(522.5px, 6119.5px, 0px);
-                                    ">
+                                            position: absolute;
+                                            inset: auto auto 0px 0px;
+                                            margin: 0px;
+                                            transform: translate3d(522.5px, 6119.5px, 0px);
+                                          ">
               <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"
                 aria-labelledby="dropdownHelperRadioButton">
                 <li>
@@ -462,8 +464,248 @@
           </div>
         </div>
       </div>
+      <!-- main header -->
+
+      <!-- main filter -->
+      <div class="main-filter pt-5 flex justify-between items-end gap-2">
+        <div class="filters flex justify-start items-end gap-2">
+          <div class="date-range-filter">
+            <p class="text-sm mb-2">Date Range:This fiscal year</p>
+            <div date-rangepicker class="flex items-center">
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                  </svg>
+                </div>
+                <input name="start" type="text"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-0 focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Select date start">
+              </div>
+              <!-- <span class="mx-4 text-gray-500">to</span> -->
+              <div class="relative">
+                <div class="absolute rounded-0 inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                  </svg>
+                </div>
+                <input name="end" type="text"
+                  class="bg-gray-50 rounded-0 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Select date end">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="drpdwn text-sm">
+            <p class="text-sm mb-2">Compara with</p>
+            <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio2"
+              class="flex justify-between items-center gap-[10px] border border-[#E1E1E1] w-[380px] p-[8px] rounded-[7px]"
+              type="button">
+              <div class="flex gap-2 items-center">
+                <div class="text-[#8E92BC]">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+                  </svg>
+
+                </div>
+
+                <span>Compare with 90 days</span>
+              </div>
+
+              <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdownHelperRadio2"
+              class="z-10 hidden bg-white divide-y w-[380px] divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600"
+              data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="
+                                                      position: absolute;
+                                                      inset: auto auto 0px 0px;
+                                                      margin: 0px;
+                                                      transform: translate3d(522.5px, 6119.5px, 0px);
+                                                    ">
+              <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownHelperRadioButton">
+
+
+                <li>
+                  <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <div class="flex items-center h-5">
+                      <input id="helper-radio-5" name="helper-radio" type="radio" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                        <div>1 month</div>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <div class="flex items-center h-5">
+                      <input id="helper-radio-5" name="helper-radio" type="radio" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                        <div>2 months</div>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <div class="flex items-center h-5">
+                      <input id="helper-radio-6" name="helper-radio" type="radio" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                        <div>3 months</div>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <div class="flex items-center h-5">
+                      <input id="helper-radio-6" name="helper-radio" type="radio" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                        <div>4 months</div>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex w-full flex-col p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <span class="text-xs">
+                      Enter a different number
+                    </span>
+                    <div class="text-sm w-full">
+                      <input type="text" class="border-0 border-b border-white w-full bg-transparent" name="" id="">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="mt-4">Previous</p>
+                </li>
+                <li>
+                  <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <div class="flex items-center h-5">
+                      <input id="helper-radio-6" name="helper-radio" type="radio" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                        <div>Months</div>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <div class="flex items-center h-5">
+                      <input id="helper-radio-6" name="helper-radio" type="radio" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                        <div>Quarter</div>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <div class="flex items-center h-5">
+                      <input id="helper-radio-6" name="helper-radio" type="radio" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                        <div>Year</div>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <div class="flex items-center h-5">
+                      <input id="helper-radio-6" name="helper-radio" type="radio" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label for="helper-radio-6" class="font-medium text-gray-900 dark:text-gray-300">
+                        <div>Custom range date</div>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex text-xs p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                    <div class="flex items-center h-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                      </svg>
+
+                    </div>
+                    <div class="ml-2 text-sm">
+                      <label for="helper-radio-6" class="font-medium text-xs text-gray-900 dark:text-gray-300">
+                        <div>Options are disabled because the report date is longer</div>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="btn text-white bg-[#1C84C6] rounded py-[8px] px-[16px] flex justify-center items-center gap-2">
+            Get Report <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+
+          </button>
+        </div>
+
+        <button
+          class="btn text-white bg-[#1C84C6] rounded py-[8px] px-[16px] text-sm flex justify-center items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+          </svg>
+
+          Learn <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>
+
+        </button>
+      </div>
+      <!-- main filter -->
     </div>
   </div>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
