@@ -37,3 +37,34 @@ input {
 .toggleable-tr.show {
   display: table-row;
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.date-range-filter * {
+  background: white;
+}
+.date-range-filter .relative {
+  border: 1px solid #f3f3f3;
+}
+.date-range-filter .relative:first-child {
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+.date-range-filter .relative:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.date-range-filter input {
+  border: none !important;
+  outline: unset !important;
+  box-shadow: unset !important;
+  background-color: white;
+}
+.drpdwn.text-sm * {
+  background: white !important;
+}

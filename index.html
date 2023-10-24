@@ -18,9 +18,9 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="overflow-hidden">
   <div class="wrapper flex md:flex-row flex-col justify-between items-start gap-2">
-    <div class="sidebar w-[250px] p-[16px] bg-[#243747] min-h-screen h-auto">
+    <div class="sidebar w-[250px] p-[16px] bg-[#243747] h-screen overflow-y-auto">
       <div class="flex min-h-[95vh] h-auto w-full flex-col justify-between items-start gap-[20px]">
         <div class="top w-full">
           <a href="" class="block text-center">
@@ -199,7 +199,7 @@
       </div>
     </div>
 
-    <div class="main w-full p-[20px]">
+    <div class="main w-full p-[20px] h-screen overflow-y-auto">
       <!-- main header -->
       <div class="main-top flex justify-between items-center gap-2">
         <div class="left">
@@ -474,7 +474,7 @@
           <div class="date-range-filter">
             <p class="text-sm mb-2">Date Range:This fiscal year</p>
             <div date-rangepicker class="flex items-center">
-              <div class="relative">
+              <div class="relative text-xs">
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                   <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -483,7 +483,7 @@
                   </svg>
                 </div>
                 <input name="start" type="text"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-0 focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-0 focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 py-[9px] rounded-l-md text-xs dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Select date start">
               </div>
               <!-- <span class="mx-4 text-gray-500">to</span> -->
@@ -496,17 +496,17 @@
                   </svg>
                 </div>
                 <input name="end" type="text"
-                  class="bg-gray-50 rounded-0 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  class="bg-gray-50 rounded-0 border border-gray-300 text-gray-900 text-xs focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 py-[9px] rounded-r-md dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Select date end">
               </div>
             </div>
 
           </div>
 
-          <div class="drpdwn text-sm">
-            <p class="text-sm mb-2">Compara with</p>
+          <div class="drpdwn text-xs">
+            <p class="text-sm mb-2">Compare with</p>
             <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio2"
-              class="flex justify-between items-center gap-[10px] border border-[#E1E1E1] w-[380px] p-[8px] rounded-[7px]"
+              class="flex justify-between items-center gap-[10px] border border-[#E1E1E1] w-[350px] py-[5px] px-[8px] rounded-[7px]"
               type="button">
               <div class="flex gap-2 items-center">
                 <div class="text-[#8E92BC]">
@@ -518,7 +518,7 @@
 
                 </div>
 
-                <span>Compare with 90 days</span>
+                <span>Compare with 4 months</span>
               </div>
 
               <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -679,29 +679,38 @@
             </div>
           </div>
 
-          <button class="btn text-white bg-[#1C84C6] rounded py-[8px] px-[16px] flex justify-center items-center gap-2">
+          <button
+            class="btn text-white bg-[#1C84C6] rounded py-[8px] px-[16px] flex justify-center items-center gap-2 text-sm">
             Get Report <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6">
+              stroke="currentColor" class="w-5 h-5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
             </svg>
 
           </button>
         </div>
 
-        <button
-          class="btn text-white bg-[#1C84C6] rounded py-[8px] px-[16px] text-sm flex justify-center items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-          </svg>
 
-          Learn <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-          </svg>
+        <div class="flex justify-end items-center gap-2">
+          <div class="btn-group flex justify-center items-center">
+            <button class="text-xs px-3 bg-[#ffffff] border py-2 rounded-l-md">CSV</button>
+            <button class="text-xs px-3 bg-[#ffffff] border-y py-2">Excel</button>
+            <button class="text-xs px-3 bg-[#ffffff] border py-2 rounded-r-md">PDF</button>
+          </div>
+          <button
+            class="btn text-white bg-[#1C84C6] rounded py-[8px] px-[16px] text-xs flex justify-center items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            </svg>
 
-        </button>
+            Learn <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+
+          </button>
+        </div>
       </div>
       <!-- main filter -->
 
