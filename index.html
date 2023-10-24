@@ -20,7 +20,8 @@
 
 <body class="overflow-hidden">
   <div class="wrapper flex md:flex-row flex-col justify-between items-start gap-2">
-    <div class="sidebar w-[250px] p-[16px] bg-[#243747] h-screen overflow-y-auto">
+
+    <div id="sidebar" class="sidebar w-[250px] p-[16px] bg-[#243747] h-screen overflow-y-auto">
       <div class="flex min-h-[95vh] h-auto w-full flex-col justify-between items-start gap-[20px]">
         <div class="top w-full">
           <a href="" class="block text-center">
@@ -198,19 +199,27 @@
         </div>
       </div>
     </div>
+    <div id="sidebar-bg"></div>
 
     <div class="main w-full p-[20px] h-screen overflow-y-auto">
       <!-- main header -->
       <div class="main-top flex justify-between items-center gap-2">
-        <div class="left">
-          <p class="text-xl font-semibold text-[#8E92BC]">
+        <div class="left md:block hidden">
+          <p class="text-xl font-semibold text-[#8E92BC] md:block hidden">
             Income Statement ( Profit and Loss)
           </p>
         </div>
 
-        <div class="right flex gap-4 justify-end items-center gap-2">
+        <div class="right flex md:justify-end justify-between md:w-auto w-full items-center gap-2">
+          <button class="md:hidden block" id="sidebar-toggler">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
 
-          <div class="drpdwn text-sm">
+          </button>
+
+          <div class="drpdwn text-sm md:block hidden">
             <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio"
               class="flex items-center gap-[10px] border border-[#E1E1E1] p-[8px] rounded-[7px]" type="button">
               <div class="text-[#8E92BC]">
@@ -470,7 +479,7 @@
 
       <!-- main filter -->
       <div class="main-filter pt-5 flex justify-between items-end gap-2">
-        <div class="filters flex justify-start items-end gap-2">
+        <div class="filters flex md:flex-row flex-col md:w-auto w-full justify-start items-end gap-2">
           <div class="date-range-filter">
             <p class="text-sm mb-2">Date Range:This fiscal year</p>
             <div date-rangepicker class="flex items-center">
@@ -503,10 +512,10 @@
 
           </div>
 
-          <div class="drpdwn text-xs">
+          <div class="drpdwn text-xs md:w-auto w-full">
             <p class="text-sm mb-2">Compare with</p>
             <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio2"
-              class="flex justify-between items-center gap-[10px] border border-[#E1E1E1] w-[350px] py-[5px] px-[8px] rounded-[7px]"
+              class="flex justify-between items-center gap-[10px] border border-[#E1E1E1] md:w-[350px] w-full py-[5px] px-[8px] rounded-[7px]"
               type="button">
               <div class="flex gap-2 items-center">
                 <div class="text-[#8E92BC]">
@@ -530,7 +539,7 @@
 
             <!-- Dropdown menu -->
             <div id="dropdownHelperRadio2"
-              class="z-10 hidden bg-white divide-y w-[380px] divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600"
+              class="z-10 hidden bg-white divide-y md:w-[380px] w-[300px] divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600"
               data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="
                                                       position: absolute;
                                                       inset: auto auto 0px 0px;
@@ -595,11 +604,11 @@
                 </li>
                 <li>
                   <div class="flex w-full flex-col p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
-                    <span class="text-xs">
+                    <span class="text-xs text-black">
                       Enter a different number
                     </span>
                     <div class="text-sm w-full">
-                      <input type="text" class="border-0 border-b border-white w-full bg-transparent" name="" id="">
+                      <input type="text" class="border-0 border-b border-gray-300 w-full bg-transparent" name="" id="">
                     </div>
                   </div>
                 </li>
@@ -690,7 +699,7 @@
         </div>
 
 
-        <div class="flex justify-end items-center gap-2">
+        <div class="md:flex hidden justify-end items-center gap-2">
           <div class="btn-group flex justify-center items-center">
             <button class="text-xs px-3 bg-[#ffffff] border py-2 rounded-l-md">CSV</button>
             <button class="text-xs px-3 bg-[#ffffff] border-y py-2">Excel</button>
@@ -715,8 +724,8 @@
       <!-- main filter -->
 
       <!-- data table -->
-      <section class="data-table flex gap-1 justify-between items-start pt-5">
-        <table class="table w-full w-full">
+      <section class="data-table overflow-x-auto flex gap-1 justify-between items-start pt-5">
+        <table class="table md:min-w-full w-full min-w-[500%]">
           <thead>
             <th class="text-xs" colspan="2"></th>
             <th class="text-xs">
@@ -891,7 +900,7 @@
                 $ 1.290,31
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr refund-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2 text-xs">Refunded Amount</p>
               </td>
@@ -935,7 +944,7 @@
                 $2,463.06
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr refund-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2">Refunded Referrak Fee</p>
               </td>
@@ -979,7 +988,7 @@
                 $2,463.06
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr refund-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2 text-xs">Refund Commission</p>
               </td>
@@ -1023,7 +1032,7 @@
                 $2,463.06
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr refund-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2 text-xs">Value of Returned Items</p>
               </td>
@@ -1350,7 +1359,7 @@
             </tr>
             <tr>
               <td class="border text-left text-xs" colspan="2">
-                <button id="refund-cost" class="flex justify-between items-center gap-2 w-full">
+                <button id="fulfilment" class="flex justify-between items-center gap-2 w-full">
                   <span class="text-semibold">Fulfilments</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-4 h-4">
@@ -1399,7 +1408,7 @@
                 $ 1.290,31
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr fulfilment-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2">Refunded Referral Fee</p>
               </td>
@@ -1443,7 +1452,7 @@
                 $2,463.06
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr fulfilment-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2 text-xs">FBA Fulfilment</p>
               </td>
@@ -1487,7 +1496,7 @@
                 $2,463.06
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr fulfilment-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2 text-xs">Shipping</p>
               </td>
@@ -1636,7 +1645,7 @@
             </tr>
             <tr>
               <td class="border text-left text-xs" colspan="2">
-                <button id="refund-cost" class="flex justify-between items-center gap-2 w-full">
+                <button id="advert-fees" class="flex justify-between items-center gap-2 w-full">
                   <span class="text-semibold">Advertising Fees</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-4 h-4">
@@ -1685,7 +1694,7 @@
                 $ 1.290,31
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr advert-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2">Ads Cost</p>
               </td>
@@ -1729,7 +1738,7 @@
                 $2,463.06
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr advert-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2 text-xs">Promotions</p>
               </td>
@@ -1773,7 +1782,7 @@
                 $2,463.06
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr advert-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2 text-xs">Coupon Redemption Fee</p>
               </td>
@@ -1819,7 +1828,7 @@
             </tr>
             <tr>
               <td class="border text-left text-xs" colspan="2">
-                <button id="refund-cost" class="flex justify-between items-center gap-2 w-full">
+                <button id="inventory-fees" class="flex justify-between items-center gap-2 w-full">
                   <span class="text-semibold">Inventory Fees</span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-4 h-4">
@@ -1868,7 +1877,7 @@
                 $ 1.290,31
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr inventory-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2">Monthly Storage Cost</p>
               </td>
@@ -1912,7 +1921,7 @@
                 $2,463.06
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr inventory-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2 text-xs">Long Term Storage Cost</p>
               </td>
@@ -1956,7 +1965,7 @@
                 $2,463.06
               </td>
             </tr>
-            <tr class="toggleable-tr">
+            <tr class="toggleable-tr inventory-tr">
               <td class="border text-left text-xs" colspan="2">
                 <p class="pl-2 text-xs">Inbound Transportation</p>
               </td>

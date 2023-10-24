@@ -68,3 +68,34 @@ input {
 .drpdwn.text-sm * {
   background: white !important;
 }
+.drpdwn.w-full * {
+  background: white;
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    left: 0;
+    transition: 0.5s;
+    transform: translateX(-100%);
+  }
+  #sidebar-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .sidebar.show + #sidebar-bg {
+    display: block;
+  }
+}
