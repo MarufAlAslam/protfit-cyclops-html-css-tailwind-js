@@ -12,3 +12,28 @@
 input {
   box-shadow: unset !important;
 }
+
+.data-table th,
+.data-table td {
+  padding: 0.5rem 0.5rem;
+  width: 6.67%;
+  text-align: right;
+}
+
+.data-table td.text-left {
+  text-align: left;
+}
+
+.option-btn span {
+  display: block;
+  transform: rotate(-90deg);
+  transform-origin: center center;
+}
+
+.toggleable-tr {
+  display: none;
+}
+
+.toggleable-tr.show {
+  display: table-row;
+}
