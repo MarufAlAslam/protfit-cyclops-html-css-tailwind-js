@@ -73,26 +73,25 @@ input {
   background: white;
 }
 
-.drpdwn.text-sm .marker{
+.drpdwn.text-sm .marker {
   background-color: red !important;
 }
-.drpdwn.text-sm .indicator{
+.drpdwn.text-sm .indicator {
   background-color: orange !important;
 }
-.drpdwn.text-sm .bg-gray-200{
+.drpdwn.text-sm .bg-gray-200 {
   background-color: rgb(235, 235, 235) !important;
 }
 
-
 /* fixes */
-td.p-1{
+td.p-1 {
   padding: 0.25rem !important;
 }
-tr{
+tr {
   cursor: pointer;
 }
 
-tr:hover{
+tr:hover {
   background-color: #f3f3f3;
 }
 
@@ -121,5 +120,11 @@ tr:hover{
   }
   .sidebar.show + #sidebar-bg {
     display: block;
+  }
+  .datepicker.datepicker-dropdown.dropdown.absolute.top-0.left-0.z-50.pt-2.active.block.datepicker-orient-bottom.datepicker-orient-right {
+    left: 0 !important;
+  }
+  .date-range-filter .drpdwn {
+    width: 20px;
   }
 }
