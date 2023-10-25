@@ -49,9 +49,9 @@ input {
 .date-range-filter * {
   background: white;
 }
-.date-range-filter .relative {
+/* .date-range-filter .relative {
   border: 1px solid #f3f3f3;
-}
+} */
 .date-range-filter .relative:first-child {
   border-right: none;
   border-radius: 4px 0 0 4px;

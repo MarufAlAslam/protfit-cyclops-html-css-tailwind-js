@@ -482,31 +482,170 @@
         <div class="filters flex md:flex-row flex-col md:w-auto w-full justify-start items-end gap-2">
           <div class="date-range-filter">
             <p class="text-sm mb-2">Date Range:This fiscal year</p>
-            <div date-rangepicker class="flex items-center">
-              <div class="relative text-xs">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                  </svg>
-                </div>
-                <input name="start" type="text"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-0 focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 py-[9px] rounded-l-md text-xs dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Select date start">
+            <div class="flex items-center gap-2 border rounded-md px-3">
+              <div class="relative max-w-sm flex text-xs">
+                <input datepicker datepicker-orientation="bottom right" type="text" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full text-xs dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white" placeholder="Select date">
+                <input datepicker datepicker-orientation="bottom right" type="text" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full text-xs  dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white" placeholder="Select date">
               </div>
-              <!-- <span class="mx-4 text-gray-500">to</span> -->
-              <div class="relative">
-                <div class="absolute rounded-0 inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              <div class="drpdwn text-xs md:w-auto w-full">
+                <!-- <p class="text-sm mb-2">Compare with</p> -->
+                <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadioDate"
+                  class="flex justify-between items-center gap-[10px] py-[5px] pl-[8px] rounded-[7px]"
+                  type="button">
+                 
+    
+                  <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 4 4 4-4" />
                   </svg>
+                </button>
+    
+                <!-- Dropdown menu -->
+                <div id="dropdownHelperRadioDate"
+                  class="z-10 hidden bg-white divide-y md:w-[380px] w-[300px] divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600"
+                  data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="
+                                                          position: absolute;
+                                                          inset: auto auto 0px 0px;
+                                                          margin: 0px;
+                                                          transform: translate3d(522.5px, 6119.5px, 0px);
+                                                        ">
+                  <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"
+                    aria-labelledby="dropdownHelperRadioButton">
+    
+    
+                    <li>
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="ml-2 w-full text-sm flex justify-between items-center">
+                          <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                            <div class="text-sm">This month</div>
+                          </label>
+                          <label for="" class="text-gray-400 text-sm">
+                            Aug 2023
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="ml-2 w-full text-sm flex justify-between items-center">
+                          <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                            <div class="text-sm">This quarter</div>
+                          </label>
+                          <label for="" class="text-gray-400 text-sm">
+                            Jul 1 - Sep 30 2023
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="ml-2 w-full text-sm flex justify-between items-center">
+                          <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                            <div class="text-sm">This fiscal year</div>
+                          </label>
+                          <label for="" class="text-gray-400 text-sm">
+                            Aug 2023
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <hr class="my-2">
+                    </li>
+                    <li>
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="ml-2 w-full text-sm flex justify-between items-center">
+                          <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                            <div class="text-sm">Last month</div>
+                          </label>
+                          <label for="" class="text-gray-400 text-sm">
+                            Jul 2023
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="ml-2 w-full text-sm flex justify-between items-center">
+                          <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                            <div class="text-sm">Last Quarter</div>
+                          </label>
+                          <label for="" class="text-gray-400 text-sm">
+                            Apr 1 - Jun 30 2023
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="ml-2 w-full text-sm flex justify-between items-center">
+                          <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                            <div class="text-sm">Last fiscal year</div>
+                          </label>
+                          <label for="" class="text-gray-400 text-sm">
+                            Jan 1 - Dec 31 2022
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <hr class="my-2">
+                    </li>
+                    <li>
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="ml-2 w-full text-sm flex justify-between items-center">
+                          <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                            <div class="text-sm">Month to date</div>
+                          </label>
+                          <label for="" class="text-gray-400 text-sm">
+                            Aug 1 - Aug 17 2022
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="ml-2 w-full text-sm flex justify-between items-center">
+                          <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                            <div class="text-sm">Quarter to date</div>
+                          </label>
+                          <label for="" class="text-gray-400 text-sm">
+                            Jul 1 - Aug 17 2022
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="ml-2 w-full text-sm flex justify-between items-center">
+                          <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                            <div class="text-sm">Year to date</div>
+                          </label>
+                          <label for="" class="text-gray-400 text-sm">
+                            Jan 1 - Aug 17 2022
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <hr class="my-2">
+                    </li>
+                    <li>
+                      <div class="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                        <div class="ml-2 w-full text-sm flex justify-between items-center">
+                          <label for="helper-radio-5" class="font-medium text-gray-900 dark:text-gray-300">
+                            <div class="text-sm">Custom Date Range</div>
+                          </label>
+                          <label for="" class="text-gray-400 text-sm">
+                            Jan 1 - Aug 17 2022
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <input name="end" type="text"
-                  class="bg-gray-50 rounded-0 border border-gray-300 text-gray-900 text-xs focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 py-[9px] rounded-r-md dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Select date end">
               </div>
             </div>
 
