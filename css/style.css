@@ -72,6 +72,16 @@ input {
   background: white;
 }
 
+.drpdwn.text-sm .marker{
+  background-color: red !important;
+}
+.drpdwn.text-sm .indicator{
+  background-color: orange !important;
+}
+.drpdwn.text-sm .bg-gray-200{
+  background-color: rgb(235, 235, 235) !important;
+}
+
 
 /* fixes */
 td.p-1{
