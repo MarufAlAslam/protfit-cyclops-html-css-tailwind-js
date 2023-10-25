@@ -72,6 +72,12 @@ input {
   background: white;
 }
 
+
+/* fixes */
+td.p-1{
+  padding: 0.25rem !important;
+}
+
 @media screen and (max-width: 767px) {
   .sidebar {
     position: fixed;
