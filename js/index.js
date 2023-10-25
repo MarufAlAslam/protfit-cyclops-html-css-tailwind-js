@@ -30,6 +30,15 @@ advertFees.addEventListener("click", () => {
   });
 });
 
+const adsCost = document.getElementById("ads-cost");
+adsCost.addEventListener("click", () => {
+  //   by clicking on it, show all of it's sibling with class toggleable-tr
+  const adCostTr = document.querySelectorAll(".ad-cost-tr");
+  adCostTr.forEach((tr) => {
+    tr.classList.toggle("show");
+  });
+});
+
 const inventoryFees = document.getElementById("inventory-fees");
 inventoryFees.addEventListener("click", () => {
   //   by clicking on it, show all of it's sibling with class toggleable-tr
