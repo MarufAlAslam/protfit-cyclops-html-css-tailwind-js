@@ -104,6 +104,10 @@ tr:hover {
   left: 260px !important;
 }
 
+.drpdwn li:hover *{
+  background-color: #EBEBEB !important;
+}
+
 @media screen and (max-width: 767px) {
   .sidebar {
     position: fixed;
