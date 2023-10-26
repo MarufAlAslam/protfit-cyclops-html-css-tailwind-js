@@ -221,7 +221,7 @@
 
           <div class="drpdwn text-sm md:block hidden">
             <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio"
-              class="flex items-center gap-[10px] border border-[#E1E1E1] p-[8px] rounded-[7px]" type="button">
+              class="flex h-[36px] items-center gap-[10px] border border-[#E1E1E1] p-[8px] rounded-[7px]" type="button">
               <div class="text-[#8E92BC]">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="w-6 h-6">
@@ -229,12 +229,15 @@
                     d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                 </svg>
               </div>
-              amazon.com
-              <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <span class="block pr-8">
+                amazon.com
+              </span>
+              <!-- <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="gray"
                 viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="m1 1 4 4 4-4" />
-              </svg>
+              </svg> -->
+              <i class="fa fa-chevron-down text-gray-500"></i>
             </button>
 
             <!-- Dropdown menu -->
@@ -290,7 +293,7 @@
               </ul>
             </div>
           </div>
-          <div class="drpdwn text-sm md:block hidden">
+          <div class="drpdwn text-sm">
             <button id="dropdownHelperRadioButton" data-dropdown-toggle="notification"
               class="relative" type="button">
               <div class="marker w-[10px] h-[10px] absolute top-[5px] right-[0px] rounded-full bg-red-500 z-10 rounded-full">
@@ -308,7 +311,7 @@
                                   margin: 0px;
                                   transform: translate3d(522.5px, 6119.5px, 0px);
                                 ">
-              <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200 w-[400px]"
+              <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200 md:w-[400px] w-[340px]"
                 aria-labelledby="dropdownHelperRadioButton">
                 <li>
                   <div class="flex gap-3 justify-between items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
@@ -322,7 +325,7 @@
                     </span>
                     </div>
 
-                    <span class="flex justify-end items-center gap-2 text-sm">
+                    <span class="flex justify-end items-center gap-2 md:text-sm text-xs">
                       Mark all as read
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -422,7 +425,7 @@
             </div>
             <i class="fa fa-bell text-[#FCAD12] text-2xl"></i>
           </button> -->
-          <button class="btn text-[#999AA7]">
+          <button class="btn text-[#999AA7] md:block hidden">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="w-7 h-7">
               <path stroke-linecap="round" stroke-linejoin="round"
@@ -433,7 +436,7 @@
 
           <div class="drpdwn text-sm">
             <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio1"
-              class="flex items-center gap-[10px] border border-[#E1E1E1] p-[8px] rounded-[7px]" type="button">
+              class="flex h-[36px] items-center gap-[10px]  border border-[#E1E1E1] p-[8px] rounded-[7px]" type="button">
               <div class="text-[#8E92BC]">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="w-6 h-6">
@@ -442,12 +445,13 @@
                 </svg>
 
               </div>
-              Profitcyclops Demo
-              <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <span class="block md:pr-8 md:text-[16px] text-sm">Profitcyclops Demo</span>
+              <!-- <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="m1 1 4 4 4-4" />
-              </svg>
+              </svg> -->
+              <i class="fa fa-chevron-down text-gray-500"></i>
             </button>
 
             <!-- Dropdown menu -->
@@ -462,9 +466,9 @@
               <ul class="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"
                 aria-labelledby="dropdownHelperRadioButton">
                 <li>
-                  <div class="flex mb-3 pl-3 items-center border rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                  <div class="flex mb-3 pl-3 items-center bg-gray-200 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                     <div class="flex items-center h-5">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="transparent" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
                           d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -473,7 +477,7 @@
                     </div>
                     <div class="ml-2 text-sm w-full">
                       <form action="">
-                        <input type="text" class="border-0 w-full outline-0 px-2 bg-transparent shadow-0" name="" id="">
+                        <input type="text" placeholder="Enter Shop" class="border-0 bg-gray-200 w-full outline-0 px-2 bg-transparent shadow-0" name="" id="">
                       </form>
                     </div>
                   </div>
@@ -608,22 +612,24 @@
         <div class="filters flex md:flex-row flex-col md:w-auto w-full justify-start items-end gap-2">
           <div class="date-range-filter">
             <p class="text-sm mb-2">Date Range:This fiscal year</p>
-            <div class="flex items-center gap-2 border rounded-md px-3">
-              <div class="relative max-w-sm flex text-xs">
-                <input datepicker datepicker-orientation="bottom right" type="text" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full text-xs dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white" placeholder="Select date">
-                <input datepicker datepicker-orientation="bottom right" type="text" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full text-xs  dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white" placeholder="Select date">
+            <div class="flex items-center gap-2 border rounded-md px-3 py-0 h-[36px] md:w-[300px] w-full w-full overflow-hidden">
+              
+              <div class="relative max-w-sm flex md:justfy-start justify-between text-xs">
+                <input datepicker datepicker-orientation="bottom right" type="text" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block md:w-[130px] w-[45%] dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white" placeholder="Select date">
+                <input datepicker datepicker-orientation="bottom right" type="text" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block md:w-[120px] w-[45%] dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white" placeholder="Select date">
               </div>
-              <div class="drpdwn text-xs md:w-auto w-full">
+              <div class="drpdwn text-xs md:w-auto w-[10%]">
                 <!-- <p class="text-sm mb-2">Compare with</p> -->
                 <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadioDate"
                   class="flex justify-between items-center gap-[10px] py-[5px] pl-[8px] rounded-[7px]"
                   type="button">
                  
     
-                  <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  <!-- <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m1 1 4 4 4-4" />
+                      d="m1 1 4 4 4-4" /> -->
+                      <i class="fa fa-chevron-down text-gray-500"></i>
                   </svg>
                 </button>
     
@@ -780,7 +786,7 @@
           <div class="drpdwn text-xs md:w-auto w-full">
             <p class="text-sm mb-2">Compare with</p>
             <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio2"
-              class="flex justify-between items-center gap-[10px] border border-[#E1E1E1] md:w-[350px] w-full py-[5px] px-[8px] rounded-[7px]"
+              class="flex justify-between items-center gap-[10px] border border-[#E1E1E1] md:w-[300px] h-[36px] w-full py-[5px] px-[8px] rounded-[7px]"
               type="button">
               <div class="flex gap-2 items-center">
                 <div class="text-[#8E92BC]">
@@ -792,19 +798,20 @@
 
                 </div>
 
-                <span>Compare with 4 months</span>
+                <span class="text-sm">Compare with 4 months</span>
               </div>
 
-              <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              <!-- <svg class="w-2.5 h-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="m1 1 4 4 4-4" />
-              </svg>
+              </svg> -->
+              <i class="fa fa-chevron-down text-gray-500 md:block hidden"></i>
             </button>
 
             <!-- Dropdown menu -->
             <div id="dropdownHelperRadio2"
-              class="z-10 hidden bg-white divide-y md:w-[380px] w-[300px] divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600"
+              class="z-10 hidden bg-white divide-y md:w-[300px] w-[300px] divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600"
               data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="
                                                       position: absolute;
                                                       inset: auto auto 0px 0px;
@@ -1072,7 +1079,9 @@
             </tr>
             <tr>
               <td class="border text-left text-xs" colspan="2">
+               <p class="pl-2">
                 Unit Sold
+               </p>
               </td>
               <td class="border-y text-xs">
                 2.782
@@ -1343,7 +1352,7 @@
             </tr>
             <tr>
               <td class="border text-left text-xs" colspan="2">
-                Refunds
+                <p class="pl-2">Refunds</p>
               </td>
               <td class="border-y text-xs">
                 2.782
@@ -1387,7 +1396,7 @@
             </tr>
             <tr>
               <td class="border text-left text-xs" colspan="2">
-                Refunds/Sales Percentage
+                <p class="pl-2">Refunds/Sales Percentage</p>
               </td>
               <td class="border-y text-xs">
                 2%
@@ -1431,7 +1440,7 @@
             </tr>
             <tr>
               <td class="border text-left text-xs min-w-[200px]" colspan="2">
-                Sellable Retrurn
+               <p class="pl-2"> Sellable Retrurn</p>
               </td>
               <td class="border-y text-xs">
                 2%

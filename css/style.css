@@ -69,6 +69,12 @@ input {
 .drpdwn.text-sm * {
   background: white !important;
 }
+.drpdwn.text-sm .flex.items-center.h-5 * {
+  background: #EBEBEB !important;
+}
+.drpdwn.text-sm .flex.items-center.h-5.text\[\#999AA7\] * {
+  background: transparent !important;
+}
 .drpdwn.w-full * {
   background: white;
 }
@@ -93,6 +99,9 @@ tr {
 
 tr:hover {
   background-color: #f3f3f3;
+}
+.datepicker {
+  left: 260px !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -122,8 +131,8 @@ tr:hover {
     display: block;
   }
   .datepicker.datepicker-dropdown.dropdown.absolute.top-0.left-0.z-50.pt-2.active.block.datepicker-orient-bottom.datepicker-orient-right {
-    left: 0 !important;
-  }
+    left: 20px !important;
+}
   .date-range-filter .drpdwn {
     width: 20px;
   }
