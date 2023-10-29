@@ -107,6 +107,38 @@ tr:hover {
 .drpdwn li:hover *{
   background-color: #EBEBEB !important;
 }
+div#dropdownHelperRadioDate {
+  transform: translate(260.556px, 176.667px) !important;
+  width: 300px;
+}
+
+.active-bg td{
+  background-color: #f3f3f3 !important;
+}
+tr:hover td{
+  background-color: #f3f3f3 !important;
+}
+
+.datepicker {
+  left: 260px !important;
+  top: 174px !important;
+  position: absolute !important;
+}
+
+#overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#overlay.show{
+  display: block;
+}
 
 @media screen and (max-width: 767px) {
   .sidebar {
