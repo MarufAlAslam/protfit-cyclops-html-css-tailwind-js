@@ -129,3 +129,7 @@ overlay.addEventListener('click', function () {
   dropdownHelperIcony.classList.toggle('rotate-180')
   overlay.classList.toggle('show')
 })
+
+
+const headcol = document.getElementsByClassName('headcol')
+
