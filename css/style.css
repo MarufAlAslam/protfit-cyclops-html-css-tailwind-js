@@ -125,7 +125,7 @@ tr:hover td {
   position: absolute !important;
 }
 
-#overlay {
+#overlayx {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -138,6 +138,93 @@ tr:hover td {
 
 #overlay.show {
   display: block;
+}
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#overlayx.show {
+  display: block;
+}
+#overlayy {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#overlayx.show {
+  display: block;
+}
+#overlayy {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#overlayy.show {
+  display: block;
+}
+#overlayz {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#overlayz.show {
+  display: block;
+}
+
+tr#refund-cost-tr.active-bg button svg {
+  transform: rotate(180deg);
+}
+tr#fulfilment-tr.active-bg button svg {
+  transform: rotate(180deg);
+}
+tr#advert-tr.active-bg button svg {
+  transform: rotate(180deg);
+}
+tr#inventory-tr.active-bg button svg {
+  transform: rotate(180deg);
+}
+tr#other-tr.active-bg button svg {
+  transform: rotate(180deg);
+}
+tr#ads-cost-tr.advert-tr.show.active-bg.bg-gray-200 svg {
+  transform: rotate(180deg);
+}
+span.datepicker-cell.hover\:bg-gray-100.dark\:hover\:bg-gray-600.block.flex-1.leading-9.border-0.rounded-lg.cursor-pointer.text-center.text-gray-900.dark\:text-white.font-semibold.text-sm.day.prev.text-gray-500 {
+  color: gray;
+  font-weight: 300;
+}
+
+span.datepicker-cell.hover\:bg-gray-100.dark\:hover\:bg-gray-600.block.flex-1.leading-9.border-0.rounded-lg.cursor-pointer.text-center.text-gray-900.dark\:text-white.font-semibold.text-sm.day {
+  color: black;
+  font-weight: 300;
+}
+span.datepicker-cell.block.flex-1.leading-9.border-0.rounded-lg.cursor-pointer.text-center.font-semibold.text-sm.day.selected.bg-blue-700.text-white.dark\:bg-blue-600.focused {
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -177,10 +264,10 @@ tr:hover td {
     position: -webkit-sticky;
     position: sticky;
     background-color: white;
-    left: 0;
+    left: -5px;
     width: 140px !important;
     min-width: 140px !important;
-  }
+}
 
   .sticky {
     position: -webkit-sticky;
@@ -189,4 +276,16 @@ tr:hover td {
     left: 0;
     z-index: 1;
   }
+
+  thead::before {
+    content: '';
+    background: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+    left: -5px;
+    height: 40px;
+    width: 140px;
+    display: table-cell;
+}
 }

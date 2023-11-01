@@ -21,6 +21,9 @@
 
 <body class="overflow-hidden">
   <div id="overlay"></div>
+  <div id="overlayx"></div>
+  <div id="overlayy"></div>
+  <div id="overlayz"></div>
   <div class="wrapper flex md:flex-row flex-col justify-between items-start gap-2">
 
     <div id="sidebar" class="sidebar w-[250px] p-[16px] bg-[#243747] h-screen overflow-y-auto">
@@ -617,8 +620,8 @@
             <div class="flex items-center gap-2 border rounded-md px-3 py-0 h-[36px] md:w-[300px] w-full w-full overflow-hidden">
               
               <div class="relative max-w-sm flex md:justfy-start justify-between text-xs">
-                <input datepicker datepicker-orientation="bottom right" type="text" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block md:w-[130px] w-[45%] dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white" placeholder="Select date">
-                <input datepicker datepicker-orientation="bottom right" type="text" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block md:w-[120px] w-[45%] dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white" placeholder="Select date">
+                <input datepicker datepicker-orientation="bottom right" type="text" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block md:w-[130px] w-[45%] dark:bg-gray-700 dark:placeholder-black placeholder:text-black dark:text-white" placeholder="Select date">
+                <input datepicker datepicker-orientation="bottom right" type="text" class="bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-blue-500 block md:w-[120px] w-[45%] placeholder:text-black" placeholder="Select date">
               </div>
               <div class="drpdwn text-xs md:w-auto w-[10%]">
                 <!-- <p class="text-sm mb-2">Compare with</p> -->
@@ -787,18 +790,18 @@
 
           <div class="drpdwn text-xs md:w-auto w-full">
             <p class="text-sm mb-2 font-semibold">Compare with</p>
-            <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio2"
+            <button id="dropdownHelperRadioButtonz" data-dropdown-toggle="dropdownHelperRadio2"
               class="flex justify-between items-center gap-[10px] border border-[#E1E1E1] md:w-[300px] h-[36px] w-full py-[5px] px-[8px] rounded-[7px]"
               type="button">
               <div class="flex gap-2 items-center">
-                <div class="text-[#8E92BC]">
+                <!-- <div class="text-[#8E92BC]">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
                   </svg>
 
-                </div>
+                </div> -->
 
                 <span class="text-sm">Compare with 4 months</span>
               </div>
@@ -808,7 +811,7 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="m1 1 4 4 4-4" />
               </svg> -->
-              <!-- <i class="fa fa-chevron-down text-gray-500 md:block hidden"></i> -->
+              <i class="fa fa-chevron-down text-gray-500 md:block hidden" id="dropdownHelperIconz"></i>
             </button>
 
             <!-- Dropdown menu -->

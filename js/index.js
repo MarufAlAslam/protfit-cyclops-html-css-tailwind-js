@@ -98,7 +98,11 @@ window.addEventListener('scroll', function () {
 const dropdownHelperRadioButton = document.getElementById('dropdownHelperRadioButton')
 const dropdownHelperRadioButtonx = document.getElementById('dropdownHelperRadioButtonx')
 const dropdownHelperRadioButtony = document.getElementById('dropdownHelperRadioButtony')
+const dropdownHelperRadioButtonz = document.getElementById('dropdownHelperRadioButtonz')
 const overlay = document.getElementById('overlay')
+const overlayx = document.getElementById('overlayx')
+const overlayy = document.getElementById('overlayy')
+const overlayz = document.getElementById('overlayz')
 
 // clicking on dropdownHelperRadioButton, the icon inside will change direction
 dropdownHelperRadioButton.addEventListener('click', function () {
@@ -110,24 +114,50 @@ dropdownHelperRadioButton.addEventListener('click', function () {
 dropdownHelperRadioButtonx.addEventListener('click', function () {
   const dropdownHelperIcon = document.getElementById('dropdownHelperIconx')
   dropdownHelperIcon.classList.toggle('rotate-180')
-  overlay.classList.toggle('show')
+  overlayx.classList.toggle('show')
 })
 // clicking on dropdownHelperRadioButton, the icon inside will change direction
 dropdownHelperRadioButtony.addEventListener('click', function () {
   const dropdownHelperIcon = document.getElementById('dropdownHelperIcony')
   dropdownHelperIcon.classList.toggle('rotate-180')
-  overlay.classList.toggle('show')
+  overlayy.classList.toggle('show')
+})
+// clicking on dropdownHelperRadioButton, the icon inside will change direction
+dropdownHelperRadioButtonz.addEventListener('click', function () {
+  const dropdownHelperIcon = document.getElementById('dropdownHelperIconz')
+  dropdownHelperIcon.classList.toggle('rotate-180')
+  overlayz.classList.toggle('show')
 })
 
 // clicking on overlay, the icon inside will change direction
 overlay.addEventListener('click', function () {
   const dropdownHelperIcon = document.getElementById('dropdownHelperIcon')
-  const dropdownHelperIconx = document.getElementById('dropdownHelperIconx')
-  const dropdownHelperIcony = document.getElementById('dropdownHelperIcony')
+  // const dropdownHelperIcony = document.getElementById('dropdownHelperIcony')
   dropdownHelperIcon.classList.toggle('rotate-180')
-  dropdownHelperIconx.classList.toggle('rotate-180')
-  dropdownHelperIcony.classList.toggle('rotate-180')
+  // dropdownHelperIcony.classList.toggle('rotate-180')
   overlay.classList.toggle('show')
+})
+// clicking on overlay, the icon inside will change direction
+overlayx.addEventListener('click', function () {
+  const dropdownHelperIconx = document.getElementById('dropdownHelperIconx')
+  // const dropdownHelperIcony = document.getElementById('dropdownHelperIcony')
+  dropdownHelperIconx.classList.toggle('rotate-180')
+  // dropdownHelperIcony.classList.toggle('rotate-180')
+  overlayx.classList.toggle('show')
+})
+overlayy.addEventListener('click', function () {
+  const dropdownHelperIcony = document.getElementById('dropdownHelperIcony')
+  // const dropdownHelperIcony = document.getElementById('dropdownHelperIcony')
+  dropdownHelperIcony.classList.toggle('rotate-180')
+  // dropdownHelperIcony.classList.toggle('rotate-180')
+  overlayy.classList.toggle('show')
+})
+overlayz.addEventListener('click', function () {
+  const dropdownHelperIcony = document.getElementById('dropdownHelperIconz')
+  // const dropdownHelperIcony = document.getElementById('dropdownHelperIcony')
+  dropdownHelperIconz.classList.toggle('rotate-180')
+  // dropdownHelperIcony.classList.toggle('rotate-180')
+  overlayz.classList.toggle('show')
 })
 
 
