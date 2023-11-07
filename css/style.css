@@ -1,9 +1,11 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
 .menu a {
   font-size: 14px;
 }
+
 .menu a.active {
   color: #fff;
   background-color: #192936;
@@ -44,12 +46,16 @@ input {
 }
 
 * {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 .date-range-filter * {
   background: white;
 }
+
 /* .date-range-filter .relative {
   border: 1px solid #f3f3f3;
 } */
@@ -57,24 +63,30 @@ input {
   border-right: none;
   border-radius: 4px 0 0 4px;
 }
+
 .date-range-filter .relative:last-child {
   border-radius: 0 4px 4px 0;
 }
+
 .date-range-filter input {
   border: none !important;
   outline: unset !important;
   box-shadow: unset !important;
   background-color: white;
 }
+
 .drpdwn.text-sm * {
   background: white !important;
 }
+
 .drpdwn.text-sm .flex.items-center.h-5 * {
   background: #ebebeb !important;
 }
+
 .drpdwn.text-sm .flex.items-center.h-5.text\[\#999AA7\] * {
   background: transparent !important;
 }
+
 .drpdwn.w-full * {
   background: white;
 }
@@ -82,9 +94,11 @@ input {
 .drpdwn.text-sm .marker {
   background-color: red !important;
 }
+
 .drpdwn.text-sm .indicator {
   background-color: orange !important;
 }
+
 .drpdwn.text-sm .bg-gray-200 {
   background-color: rgb(235, 235, 235) !important;
 }
@@ -93,6 +107,7 @@ input {
 td.p-1 {
   padding: 0.25rem !important;
 }
+
 tr {
   cursor: pointer;
 }
@@ -100,6 +115,7 @@ tr {
 tr:hover {
   background-color: #f3f3f3;
 }
+
 .datepicker {
   left: 260px !important;
 }
@@ -107,6 +123,7 @@ tr:hover {
 .drpdwn li:hover * {
   background-color: #ebebeb !important;
 }
+
 div#dropdownHelperRadioDate {
   transform: translate(260.556px, 176.667px) !important;
   width: 300px;
@@ -115,6 +132,7 @@ div#dropdownHelperRadioDate {
 .active-bg td {
   background-color: #f3f3f3 !important;
 }
+
 tr:hover td {
   background-color: #f3f3f3 !important;
 }
@@ -139,6 +157,7 @@ tr:hover td {
 #overlay.show {
   display: block;
 }
+
 #overlay {
   position: fixed;
   width: 100%;
@@ -153,6 +172,7 @@ tr:hover td {
 #overlayx.show {
   display: block;
 }
+
 #overlayy {
   position: fixed;
   width: 100%;
@@ -167,6 +187,7 @@ tr:hover td {
 #overlayx.show {
   display: block;
 }
+
 #overlayy {
   position: fixed;
   width: 100%;
@@ -181,6 +202,7 @@ tr:hover td {
 #overlayy.show {
   display: block;
 }
+
 #overlayz {
   position: fixed;
   width: 100%;
@@ -199,21 +221,27 @@ tr:hover td {
 tr#refund-cost-tr.active-bg button svg {
   transform: rotate(180deg);
 }
+
 tr#fulfilment-tr.active-bg button svg {
   transform: rotate(180deg);
 }
+
 tr#advert-tr.active-bg button svg {
   transform: rotate(180deg);
 }
+
 tr#inventory-tr.active-bg button svg {
   transform: rotate(180deg);
 }
+
 tr#other-tr.active-bg button svg {
   transform: rotate(180deg);
 }
+
 tr#ads-cost-tr.advert-tr.show.active-bg.bg-gray-200 svg {
   transform: rotate(180deg);
 }
+
 span.datepicker-cell.hover\:bg-gray-100.dark\:hover\:bg-gray-600.block.flex-1.leading-9.border-0.rounded-lg.cursor-pointer.text-center.text-gray-900.dark\:text-white.font-semibold.text-sm.day.prev.text-gray-500 {
   color: gray;
   font-weight: 300;
@@ -223,9 +251,11 @@ span.datepicker-cell.hover\:bg-gray-100.dark\:hover\:bg-gray-600.block.flex-1.le
   color: black;
   font-weight: 300;
 }
+
 span.datepicker-cell.block.flex-1.leading-9.border-0.rounded-lg.cursor-pointer.text-center.font-semibold.text-sm.day.selected.bg-blue-700.text-white.dark\:bg-blue-600.focused {
   border-radius: 50%;
 }
+
 .date-range-filter input.border-r {
   border-right: 2px solid #f3f3f3 !important;
 }
@@ -239,11 +269,14 @@ span.datepicker-cell.block.flex-1.leading-9.border-0.rounded-lg.cursor-pointer.t
   top: 0;
   right: 0;
 }
-.has-dropdown i{
+
+.has-dropdown i {
   position: relative;
   z-index: 10;
 }
-.drpdwn.text-sm .has-dropdown i, .drpdwn.w-full .has-dropdown i {
+
+.drpdwn.text-sm .has-dropdown i,
+.drpdwn.w-full .has-dropdown i {
   background: transparent !important;
 }
 
@@ -257,25 +290,42 @@ span.datepicker-cell.block.flex-1.leading-9.border-0.rounded-lg.cursor-pointer.t
   position: relative;
   left: 9px;
 }
+
 .drpdwn li:hover * {
   background-color: #E8F6FF !important;
   color: hsl(203, 82%, 47%) !important;
 }
+
 .drpdwn .flex.items-center.h-5 input {
   background: #ebebeb !important;
 }
+
 .drpdwn .flex.items-center.h-5 input {
   background: transparent !important;
 }
+
 .drpdwn .flex.items-center.h-5 input[type="radio"]:checked {
   background: black !important;
 }
+
 td.bg-\[\#F3F3F3A6\] {
-  background: #F3F3F3A6 !important;
+  background: #ddd9d9a6 !important;
 }
+
 .bg-\[\#F3F3F3A6\] td {
   background-color: #F3F3F3A6 !important;
 }
+
+.date-range-filter input {
+  padding-left: 6px;
+  border-radius: 0;
+}
+
+button#dropdownHelperRadioButtonz i {
+  position: relative;
+  left: -2px;
+}
+
 
 
 @media screen and (max-width: 767px) {
@@ -287,6 +337,7 @@ td.bg-\[\#F3F3F3A6\] {
     transition: 0.5s;
     transform: translateX(-100%);
   }
+
   #sidebar-bg {
     position: fixed;
     width: 100%;
@@ -301,12 +352,15 @@ td.bg-\[\#F3F3F3A6\] {
   .sidebar.show {
     transform: translateX(0);
   }
-  .sidebar.show + #sidebar-bg {
+
+  .sidebar.show+#sidebar-bg {
     display: block;
   }
+
   .datepicker.datepicker-dropdown.dropdown.absolute.top-0.left-0.z-50.pt-2.active.block.datepicker-orient-bottom.datepicker-orient-right {
     left: 20px !important;
   }
+
   .date-range-filter .drpdwn {
     width: 20px;
   }
@@ -318,7 +372,7 @@ td.bg-\[\#F3F3F3A6\] {
     left: -5px;
     width: 140px !important;
     min-width: 140px !important;
-}
+  }
 
   .sticky {
     position: -webkit-sticky;
@@ -338,18 +392,30 @@ td.bg-\[\#F3F3F3A6\] {
     height: 40px;
     width: 140px;
     display: table-cell;
-}
-div#dropdownHelperRadioDate {
-  transform: translate(95px, 176.667px) !important;
-  width: 300px;
-}
-.date-range-filter .has-dropdown::after {
-  top: -7px;
-  right: 0px;
-}
-.date-range-filter .has-dropdown i {
-  background: transparent;
-  position: relative;
-  left: -10px;
-}
+  }
+
+  div#dropdownHelperRadioDate {
+    transform: translate(95px, 176.667px) !important;
+    width: 300px;
+  }
+
+  .date-range-filter .has-dropdown::after {
+    top: -7px;
+    right: 0px;
+  }
+
+  .date-range-filter .has-dropdown i {
+    background: transparent;
+    position: relative;
+    left: -10px;
+  }
+
+  button#dropdownHelperRadioButtonz i {
+    display: block;
+  }
+
+  div#dropdownHelperRadioDate {
+    transform: translate(20px, 175.667px) !important;
+    width: 90%;
+  }
 }
