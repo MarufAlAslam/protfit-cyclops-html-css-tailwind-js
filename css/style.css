@@ -262,7 +262,7 @@ span.datepicker-cell.block.flex-1.leading-9.border-0.rounded-lg.cursor-pointer.t
 
 .has-dropdown::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 35px;
   height: 35px;
   background: #f3f3f3;
@@ -292,7 +292,7 @@ span.datepicker-cell.block.flex-1.leading-9.border-0.rounded-lg.cursor-pointer.t
 }
 
 .drpdwn li:hover * {
-  background-color: #E8F6FF !important;
+  background-color: #e8f6ff !important;
   color: hsl(203, 82%, 47%) !important;
 }
 
@@ -313,7 +313,7 @@ td.bg-\[\#F3F3F3A6\] {
 }
 
 .bg-\[\#F3F3F3A6\] td {
-  background-color: #F3F3F3A6 !important;
+  background-color: #f3f3f3a6 !important;
 }
 
 .date-range-filter input {
@@ -325,8 +325,6 @@ button#dropdownHelperRadioButtonz i {
   position: relative;
   left: -2px;
 }
-
-
 
 @media screen and (max-width: 767px) {
   .sidebar {
@@ -353,7 +351,7 @@ button#dropdownHelperRadioButtonz i {
     transform: translateX(0);
   }
 
-  .sidebar.show+#sidebar-bg {
+  .sidebar.show + #sidebar-bg {
     display: block;
   }
 
@@ -383,7 +381,7 @@ button#dropdownHelperRadioButtonz i {
   }
 
   thead::before {
-    content: '';
+    content: "";
     background: white;
     position: -webkit-sticky;
     position: sticky;
@@ -417,5 +415,9 @@ button#dropdownHelperRadioButtonz i {
   div#dropdownHelperRadioDate {
     transform: translate(20px, 175.667px) !important;
     width: 90%;
+  }
+  .date-range-filter
+    .relative.max-w-sm.flex.md\:justfy-start.justify-between.text-xs {
+    justify-content: flex-start;
   }
 }
