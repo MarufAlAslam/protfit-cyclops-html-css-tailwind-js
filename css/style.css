@@ -309,11 +309,15 @@ span.datepicker-cell.block.flex-1.leading-9.border-0.rounded-lg.cursor-pointer.t
 }
 
 td.bg-\[\#F3F3F3A6\] {
-  background: #ddd9d9a6 !important;
+  background: #f3f3f3 !important;
+}
+
+td.bg-\[\#F3F3F3A6\]:hover {
+  background: #f3f3f3 !important;
 }
 
 .bg-\[\#F3F3F3A6\] td {
-  background-color: #f3f3f3a6 !important;
+  background-color: #f3f3f3 !important;
 }
 
 .date-range-filter input {
